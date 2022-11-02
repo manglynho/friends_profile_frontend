@@ -1,0 +1,375 @@
+.App{
+    display: flex;
+    justify-content: center;
+}
+.FriendListCard{
+    display: flex;
+    flex-direction: column;
+    align-items: column;    
+    box-sizing: border-box;
+    padding: 20px 40px 40px;
+    gap: 14px;
+
+    position: absolute;
+    width: 714px;
+    min-height: 634px;
+    top:75px;
+
+    background: rgba(255,255,255,0.5);
+    border-radius: 8px;
+}
+
+.TitleCard{
+    width: 96px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    color: #B1B9DB;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.FriendRow{
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    width: 634px;
+    height: 88px;
+
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(204,208,223,0.5);
+    border-radius: 8px;
+
+    display: flex;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.FriendAvatar{
+    width: 15%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.FriendName{
+    flex: 1;
+    order: 2;
+}
+
+.FriendButton{
+    width: 25%;
+    order: 3;
+}
+
+.AvatarImg{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.AvatarStatus{
+    box-sizing: border-box;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    left: 5px;
+    top: 11px;
+    border-radius: 6px; 
+}
+
+.StatusTrue{
+    background: #16BA44;
+    border: 2px solid #FFFFFF;
+}
+
+.StatusFalse{
+    background: #B1B9DB;
+    border: 2px solid #F4F6FE;
+}
+
+.StatusTitle{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.StatusBadge{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+
+    color: #B1B9DB;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 8px;
+    gap: 10px;
+    height: 24px;
+    width: fit-content;
+    border: 1px solid #B1B9DB;
+    border-radius: 20px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ButtonDetails{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 8px;
+
+    width: 93px;
+    height: 40px;
+
+    /* Primary / Blue50 */
+    background: #2E57FA;
+
+    /* Primary/Blue60 */
+    border: 1px solid #0637F9;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.ButtonDetails:hover{
+    background: #0637F9;
+}
+
+.FriendPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    box-sizing: border-box;
+    padding: 20px 40px 40px;
+    gap: 14px;
+
+    position: absolute;
+    width: 714px;
+    min-height: 634px;
+    top:75px;
+}
+
+.FriendInfoCard{    
+    order: 2;
+
+    box-sizing: border-box;
+    padding: 20px 40px 40px;
+    gap: 14px;
+
+    width: 608px;
+    min-height: 634px;
+
+    background: rgba(255,255,255,0.5);
+    border-radius: 8px;
+    justify-content: left !important;
+}
+
+.NavigationBack{
+    width: 15%;
+    order: 1;
+}
+
+.NavigationBackBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 20px;
+    top: 20px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    
+    color: #2E57FA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arrowLeft {  
+    width: 20px;
+    height: 20px;
+    margin: 13px;
+
+    display: inline-block;
+    position: relative;
+}
+  
+.arrowLeft::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 85%;
+    left: 30%;
+    border-style: solid;
+    border-color: #2E57FA;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(-135deg);
+    margin: -15px 0 0 -10px;
+}
+
+    
+.arrowLeft::after {
+    content: '';
+    display: block;
+    top: 40%;
+    left: 50%;
+    border-style: solid;
+    border-color: #2E57FA;
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 20px;
+    height: 0;
+    border-width: 2px 0 0 0;
+    transform: translate(-13px, -1px);
+}
+
+.FriendInfoCard > .FriendAvatar > .AvatarStatus {
+    box-sizing: border-box;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: 11px;
+    border-radius: 10px;     
+}
+
+.FriendInfoCard > .FriendAvatar {
+    width: auto;
+    justify-content: left !important;
+}
+
+.FriendInfoCard > .FriendAvatar > .AvatarImg {
+    height: 150px;
+    width: 150px;
+    border-radius: 4px;
+    position: initial;
+    margin-left: -20px;
+}
+
+.FriendInfoCard > .FriendName > .StatusTitle {
+    font-size: 26px;
+}
+
+.Tabs{
+    margin-top: 20px;
+}
+
+.react-tabs__tab-list {
+    border: none !important;
+}
+
+.react-tabs__tab{
+    border: none !important;
+    background-color: #f9fafe;
+    bottom: -5px !important;  
+}
+
+.react-tabs__tab--selected {
+    border-bottom: 1px solid #000000 !important;
+    background-color: #f9fafe !important;  
+    bottom: -5px !important;  
+}
+
+.react-tabs__tab:focus::after {    
+    border-bottom: 1px solid #000000 !important;
+    background-color: #f9fafe !important;
+    bottom: -1px !important; 
+}
+
+.react-tabs__tab-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+
+    width: 488px;
+    min-height: 400px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 10px 20px rgba(204, 208, 223, 0.5);
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.text_muted{
+    color: #B1B9DB;
+}
+
+.rowItem{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.infoTitle{
+    order: 1;
+    width: 50%;
+}
+.infoData{
+    order: 2;
+    width: 50%;
+}
+
+.photoAlbum{
+    width: 136px;
+    height: 136px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
