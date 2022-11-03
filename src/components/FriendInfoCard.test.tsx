@@ -43,10 +43,10 @@ test('renders the user section', () => {
 
 test('renders the user section and show photos', () => {    
   const infoCardComponent = render(<FriendInfoCard {...testFriend} />);
-  const photosTab = infoCardComponent.container.querySelector('.photoTab');
-  
+  const photosTab = infoCardComponent.container.querySelectorAll('.react-tabs__tab');
+
   if(photosTab)
-   fireEvent.click(photosTab)
+   fireEvent.click(photosTab[1])
 
   expect(photosTab).not.toBe(null);
   const photosTabs = infoCardComponent.container.querySelectorAll('.photoAlbum');
