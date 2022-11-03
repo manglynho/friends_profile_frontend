@@ -2,8 +2,8 @@ import { FriendEntry } from "../types/friend_types";
 export const FriendInfoData = ( friend: FriendEntry): JSX.Element => {
     return(
         <div className="FriendInfoData">
-            <p className="text_muted">Bio:</p>
-            <p>{friend.bio}</p>
+            <p className="text_muted BioTitle">Bio:</p>
+            <p className="BioData">{friend.bio}</p>
             <hr />
             <div className="rowItem">
                 <div className="infoTitle">

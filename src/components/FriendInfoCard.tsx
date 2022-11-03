@@ -15,8 +15,8 @@ export const FriendInfoCard = (friend: FriendEntry) : JSX.Element => {
             <FriendName first_name={friend.first_name} last_name={friend.last_name} statuses={friend.statuses}/>
             <Tabs className="Tabs">
                 <TabList>
-                    <Tab>Info</Tab>
-                    <Tab>Photos</Tab>
+                    <Tab className="infoTab">Info</Tab>
+                    <Tab className="photoTab">Photos</Tab>
                 </TabList>
                 <TabPanel>
                     <FriendInfoData {...friend}/>
